@@ -1,0 +1,54 @@
+/* Browser Reset */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+   
+}
+/*For older IE Browsers*/
+article, aside, figure, figcaption, footer, header, main, nav, section, summary {
+	display: block; 
+}
+
+html {
+    font-size: 62.5%;
+    background-color: rgb(201, 204, 9);
+}
+
+.container {
+    margin: 1rem;
+}
+table { 
+    background-color: white; 
+    width: 25%; 
+    position: relative;
+    top: 5rem;
+    right: -38%;
+}
+
+tr, td  {
+    margin: 3rem 5rem;
+}
+td { 
+    border: 1px solid black;
+    cursor: pointer; 
+    padding: 1rem;
+}
+
+h1, h2, td {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem 0 0 0;
+
+}
+.equals {
+    text-align: center;
+}
+
+.answer {
+    text-align: right;
+    cursor: none;
+}
