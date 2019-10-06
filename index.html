@@ -28,6 +28,7 @@
             <tr>
                 <td id="three" class="number">3</td>
                 <td id="two" class="number">2</td>
+
                 <td id="one" class="number">1</td>
                 <td id="subtract" class="operator">-</td>
             </tr>
@@ -39,11 +40,25 @@
             <!--get division symbol code -->
             </tr>
             <tr>
-                <td colspan="4" class="equals">=</td>
+                <td colspan="4" class="equals operator">=</td>
             </tr>
         </table>
+
+        <label for="username">The is the local storage
+            <input type="text" id="username">
+        </label>
+
+        <label for="comment">The is the session storage
+            <input type="text" id="comment">
+        </label>
+
+        <button id="saveLocal" class="btn">Save Local</button>
+        <button id="saveSession" class="btn">Session Save</button>
+
+        
     </div>
-    <script src="index.js"></script>
+    
     <script src="app.js"></script>
+    <script src="index.js"></script>
     </body>
  </html>
