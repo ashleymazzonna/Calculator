@@ -14,7 +14,7 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 
 html {
     font-size: 62.5%;
-    background-color: rgb(201, 204, 9);
+    background-color: rgb(48, 48, 53);
 }
 
 table { 
@@ -25,13 +25,15 @@ table {
     right: 40%;
 }
 
-
 td { 
    cursor: pointer; 
     padding: 1rem;
     background-color: rgb(139, 153, 167); 
 }
 
+td {
+    max-width: 0.06667;
+}
 h1, h2, td {
     font-size: 2rem;
     text-align: center;
@@ -46,6 +48,8 @@ h1, h2, td {
     border-bottom: none;
     background-color:rgb(26, 52, 80);
     color: white;
+    padding: 2rem;
+    font-size: 2.4rem;
 }
 
 label, input { margin-top: 80px; }
@@ -57,8 +61,10 @@ label, input { margin-top: 80px; }
 }
 
 .operator {
-    font-size: 24px;
+    font-size: 2.4rem;
+    background-color: rgb(26, 52, 80);
 }
+#clear-btn { font-size: 1.5rem; padding: 0}
 
 .number:hover, .operator:hover {
     background-color: rgb(104, 115, 126);
