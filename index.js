@@ -11,6 +11,7 @@ const six = document.getElementById('six');
 const seven = document.getElementById('seven');
 const eight = document.getElementById('eight');
 const nine = document.getElementById('nine');
+const decimal = document.getElementById('decimal');
 /******************************
  *** CALCULATOR OPERATORS ***
  ****************************/
@@ -44,13 +45,62 @@ const updateDisplayVal = (clickedObj) => {
 
 }
 
+const performOps = (clickedObj) => {
+    let operator = clickedObj.target.innerText;
+
+    switch (operator) {
+        case '+':
+            pendingVal = displayVal;
+            displayVal = '0';
+            answerEl.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('+');
+            break;
+
+        case '-':
+            pendingVal = displayVal;
+            displayVal = '0';
+            answerEl.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('-');
+            break;
+
+        case '*':
+            pendingVal = displayVal;
+            displayVal = '0';
+            answerEl.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('*');
+            break;
+
+        case '÷':
+            pendingVal = displayVal;
+            displayVal = '0';
+            answerEl.innerText = displayVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('/');
+            break;
+
+        case '=':
+            evalStringArray.push(displayVal);
+            var evalulation = eval(evalStringArray.join(' '));
+            displayVal = evalulation + '';
+            answerEl.innerText = displayVal;
+            evalStringArray = [];
+            break;
+        default:
+            break;
+
+    }
+}
+
 for (var i = 0; i < numberBtns.length; i++) {
     numberBtns[i].addEventListener('click', updateDisplayVal, false);
 };
 
-// for (let i = 0; i < operatorBtns.length; i++) {
-//     operatorBtns[i].addEventListener('click', , false);
-// };
+for (let i = 0; i < operatorBtns.length; i++) {
+    operatorBtns[i].addEventListener('click', performOps, false);
+};
 
 
 clearBtn.onclick = () => {
@@ -69,8 +119,11 @@ backBtn.onclick = () => {
         displayVal = '0';
 
     answerEl.innerText = displayVal;
-
-
+}
+decimal.onclick = () => {
+    if (!displayVal.includes('.'))
+        displayVal += '.';
+    answerEl.innerText = displayVal;
 }
 
 
