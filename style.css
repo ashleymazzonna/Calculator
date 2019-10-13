@@ -34,6 +34,7 @@ h1 {
 
 p { font-size: 2rem; }
 
+.answer, p, h1, .operator-btn { color: white; }
 /* Contains the Calculator */
 table { 
     background-color: rgb(100, 110, 121); 
@@ -44,13 +45,14 @@ table {
 
 td { 
     font-size: 2rem;
-    font-weight: 600;
     cursor: pointer; 
     padding: 1rem;
     background-color: rgb(139, 153, 167); 
-    margin: 1rem auto;
+    margin: 1rem auto; 
     max-width: 0.06667; }
+table, td { border-radius: 10px; }
 
+.number-btn { font-weight: 600; }
 #equals {  
     border-top: none;}
 
@@ -59,7 +61,6 @@ td {
     cursor: none;
     border-bottom: none;
     background-color:rgb(26, 52, 80);
-    color: white;
     padding: 2rem;
     font-size: 2.4rem; }
 
@@ -68,7 +69,8 @@ td {
     background-color: rgb(26, 52, 80); }
 
 #clear-btn { 
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    padding: 0 }
 
 .btn:hover {
     background-color: rgb(104, 115, 126);
