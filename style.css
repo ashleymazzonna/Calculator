@@ -56,7 +56,7 @@ table, td { border-radius: 10px; }
 #equals {  
     border-top: none;}
 
-.answer {
+#answer {
     text-align: right;
     cursor: none;
     border-bottom: none;
