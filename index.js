@@ -29,9 +29,8 @@ const answer = document.getElementById('answer');
 const numberBtns = document.getElementsByClassName('number-btn');
 const operatorBtns = document.getElementsByClassName('operator-btn');
 
-let currentDisplay = 0;
+let currentDisplay = [];
 let pendingNum;
-
 
 for (var i = 0; i < numberBtns.length; i++) {
     numberBtns[i].addEventListener('click', function () {
