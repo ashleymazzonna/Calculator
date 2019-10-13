@@ -18,15 +18,24 @@ const times = document.getElementById('multiply');
 const divide = document.getElementById('divide');
 const add = document.getElementById('add');
 const subtract = document.getElementById('subtract');
+const percent = document.getElementById('percent');
+
+const backBtn = document.getElementById('back-btn');
+const clearBtn = document.getElementById('clear-btn');
+const equalBtn = document.getElementById('equals');
 /**************ANSWER *********/
 const answer = document.getElementById('answer');
 
+const numberBtns = document.getElementsByClassName('number-btn')
 
-function addFunc(x, y) {
+const operatorBtns = document.getElementsByClassName('operator-btn');
 
+for (let i = 0; i < numberBtns; i++) {
 
+}
 
-    return x + y;
+for (let i = 0; i < operatorBtns; i++) {
+
 }
 
 

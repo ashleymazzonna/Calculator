@@ -12,43 +12,63 @@
         <h1>Ashley's Build a Calculator</h1>
         <p>HTML, CSS, JavaScript</p>
     </header>
-        <img src="imgs/favicon-96x96.png">
-    
-
-
+        <img src="imgs/ashleyImg.png">
     <div class="container"> 
         <table>
-            <tr><td colspan="4" class="answer">0.00</td></tr>
+            <!-- Answer Row -->
             <tr>
-                <td id="back-btn" class="operator" colspan="2">&#8701</td>
-                <td id="clear-btn" class="operator">AC</td>               
-                <td id="percent" class="operator">%</td>
+                <td colspan="4" class="answer">0.00</td>
             </tr>
+            <!-- Back Button, Clear and Divide Row -->
             <tr>
-                <td id="seven" class="number"> 7</td>
-                <td id="eight" class="number">8</td>
-                <td id="nine" class="number">9</td>
-                <td id="multiply" class="operator">&#42</td>
+                <td id="back-btn" class="btn" colspan="2">&#8701</td>
+
+                <td id="clear-btn" 
+                class="btn">AC</td> 
+
+                <td id="divide" class=" btn operator-btn">&#247</td>
+
+                <!-- <td id="percent" class="btn operator-btn">%</!--> 
             </tr>
+            <!-- 7 8 9 Multiply Row -->
+
             <tr>
-                <td id="four" class="number">4</td>
-                <td id="five" class="number">5</td>
-                <td id="six" class="number">6</td>
-                <td id="add" class="operator">+</td>
+                <td id="seven" class="btn number-btn"> 7</td>
+
+                <td id="eight" class="btn number-btn">8</td>
+
+                <td id="nine" class="btn number-btn">9</td>
+
+                <td id="multiply" class= "btn operator-btn">&#42</td>
             </tr>
+
+            <!-- 4 5 6 Subtract Row -->
             <tr>
-                <td id="one" class="number">1</td>
-                <td id="two" class="number">2</td>
-                <td id="three" class="number">3</td>   <td id="subtract" class="operator">-</td>
-                
+                <td id="four" class="btn number-btn">4</td>
+
+                <td id="five" class="btn number-btn">5</td>
+
+                <td id="six" class="btn number-btn">6</td>
+
+                <td id="subtract" class="btn operator-btn">-</td>
             </tr>
+            <!-- 1 2 3 Add Row -->
             <tr>
-                <td id="zero" class="number" colspan="2">0</td>
-                <td id="decimal" class="operator">.</td>
-                <td id="divide" class="operator">&#247</td>               
+                <td id="one" class="btn number-btn">1</td>
+
+                <td id="two" class="btn number-btn">2</td>
+
+                <td id="three" class="btn number-btn">3</td>  
+
+                <td id="add" class="btn operator-btn">+</td>              
             </tr>
+            <!-- 0 .(Decimal) Equals Row -->
             <tr>
-                <td colspan="4" class="equals operator">=</td>
+                <td id="zero" class="btn number-btn" colspan="2">0</td>
+
+                <td id="decimal" class="btn operator-btn">.</td> 
+
+                <td id="equals" class="btn operator-btn">=</td>
             </tr>
         </table>
 

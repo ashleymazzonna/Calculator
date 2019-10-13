@@ -4,64 +4,55 @@
 *::before{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-   
-}
+    box-sizing: inherit; }
 /*For older IE Browsers*/
-article, aside, figure, figcaption, footer, header, main, nav, section, summary {
-	display: block; 
-}
+article, aside, figure, figcaption, footer, header, main, nav, section, summary { display: block; }
 
 html {
     font-size: 62.5%;
     background-color: rgb(48, 48, 53);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    
+h1, p, td { text-align: center; }
 
 img {
      display: inline;
      border-radius: 50%;
      position: absolute;
      top: .5rem;
-     left: 1.5rem;
-}
+     left: 1.5rem; }
 
 header {
     border-bottom: rgb(100, 110, 121) 1px solid;
     position: relative;
     top: 2rem;
-    padding-bottom: 2rem;
-}
+    padding-bottom: 2rem; }
 
 h1 {
-    font-size: 2.5rem;
-    text-align: center; 
-    padding-bottom: 2rem; 
-}
-p {
-    text-align: center;
-    font-size: 2rem;
-}
+    font-size: 2.5rem; 
+    padding-bottom: 2rem; }
 
+p { font-size: 2rem; }
+
+/* Contains the Calculator */
 table { 
     background-color: rgb(100, 110, 121); 
     width: 20%; 
     position: absolute;
     top: 23%;
-    right: 40%;
-}
+    right: 40%; }
 
 td { 
     font-size: 2rem;
-   cursor: pointer; 
+    font-weight: 600;
+    cursor: pointer; 
     padding: 1rem;
     background-color: rgb(139, 153, 167); 
     margin: 1rem auto;
-    max-width: 0.06667;
-    text-align: center; 
-}
+    max-width: 0.06667; }
 
-.equals { text-align: center; border-top: none;}
+#equals {  
+    border-top: none;}
 
 .answer {
     text-align: right;
@@ -70,25 +61,17 @@ td {
     background-color:rgb(26, 52, 80);
     color: white;
     padding: 2rem;
+    font-size: 2.4rem; }
+
+.operator-btn {
     font-size: 2.4rem;
-}
+    background-color: rgb(26, 52, 80); }
 
-.btn {
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-}
+#clear-btn { 
+    font-size: 1.5rem; }
 
-.operator {
-    font-size: 2.4rem;
-    background-color: rgb(26, 52, 80);
-}
-
-#clear-btn { font-size: 1.5rem; padding: 0}
-
-.number:hover, .operator:hover {
+.btn:hover {
     background-color: rgb(104, 115, 126);
     box-shadow: 0px 2px 0 0 rgba(52, 52, 53, 0.575);
     color: white;
-    border: none;
-} 
+    border: none; } 
