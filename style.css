@@ -11,18 +11,15 @@ article, aside, figure, figcaption, footer, header, main, nav, section, summary 
 html {
     font-size: 62.5%;
     background-color: rgb(48, 48, 53);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-   
-body   {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
-}
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */ }
+/* Align all text in table and document */
 h1, p, td { text-align: center; }
 
 img {
@@ -37,42 +34,33 @@ header {
     position: relative;
     top: 2rem;
     padding-bottom: 2rem; }
-
-h1 {
-    font-size: 2.5rem; 
-    padding-bottom: 2rem; }
-
-p { font-size: 2rem; }
+    h1 {
+        font-size: 2.5rem; 
+        padding-bottom: 2rem; }          
+        p { font-size: 2rem; }
 
 .answer, p, h1, .operator-btn { color: white; }
-/* Contains the Calculator */
-table { 
-    background-color: rgb(100, 110, 121); 
-    width: 20%; 
-    position: absolute;
-    top: 23%;
-    right: 40%; }
 
-td { 
-    font-size: 2rem;
-    cursor: pointer; 
-    padding: 1rem;
-    background-color: rgb(139, 153, 167); 
-    margin: 2rem auto; 
-    max-width: 0.06667; }
+/* Calculator Container */
 table, td { border-radius: 10px; }
+    table { 
+        background-color: rgb(100, 110, 121); 
+        width: 20%; 
+        position: absolute;
+        top: 23%;
+        right: 40%; }
+/* Calculator Btns */
+    td { 
+        font-size: 2rem;
+        cursor: pointer; 
+        padding: 2rem;
+        background-color: rgb(139, 153, 167); 
+        margin: 2rem auto; 
+        max-width: 0.06667; }
 
 .number-btn { font-weight: 600; }
 #equals {  
-    border-top: none;}
-
-#answer {
-    text-align: right;
-    cursor: none;
-    border-bottom: none;
-    background-color:rgb(26, 52, 80);
-    padding: 1rem;
-    font-size: 2.5rem; }
+    border-top: none; }
 
 .operator-btn {
     font-size: 2.4rem;
@@ -80,10 +68,18 @@ table, td { border-radius: 10px; }
 
 #clear-btn { 
     font-size: 1.5rem;
-    padding: 0 }
+    padding: 0; }
 
 .btn:hover {
     background-color: rgb(104, 115, 126);
     box-shadow: 0px 2px 0 0 rgba(52, 52, 53, 0.575);
     color: white;
     border: none; } 
+
+    #answer {
+    text-align: right;
+    cursor: none;
+    border-bottom: none;
+    background-color:rgb(26, 52, 80);
+    padding: 1rem;
+    font-size: 2.5rem; }
