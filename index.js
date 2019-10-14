@@ -24,12 +24,17 @@ const backBtn = document.getElementById('back-btn');
 const clearBtn = document.getElementById('clear-btn');
 const equalBtn = document.getElementById('equals');
 
-/**************ANSWER *********/
+/**************
+ ANSWER ELEMENT (DISPLAY BOX)
+ *********/
 let answerEl = document.getElementById('answer');
 
 const numberBtns = document.getElementsByClassName('number-btn');
 const operatorBtns = document.getElementsByClassName('operator-btn');
 
+/****************************************************
+ Variables to update the ANSWER ELEMENT (DISPLAY BOX) and the pending number 
+ ***************************************************/
 let displayVal = '0';
 let pendingVal;
 let evalStringArray = [];
@@ -42,9 +47,11 @@ const updateDisplayVal = (clickedObj) => {
 
     displayVal += btnText;
     answerEl.innerText = displayVal;
-
 }
 
+/************************************* 
+ Performs the arithemetic operations 
+ ************************************/
 const performOps = (clickedObj) => {
     let operator = clickedObj.target.innerText;
 
@@ -94,15 +101,23 @@ const performOps = (clickedObj) => {
     }
 }
 
+/**************************************************
+ loops through the NUMBERS on the calc and adds a click event listener for each btn 
+ ***************************************************/
 for (var i = 0; i < numberBtns.length; i++) {
     numberBtns[i].addEventListener('click', updateDisplayVal, false);
 };
 
+/**************************************************************
+ * loops through the OPERATORS on the calc and adds a click event listener for each btn
+ **************************************************************/
 for (let i = 0; i < operatorBtns.length; i++) {
     operatorBtns[i].addEventListener('click', performOps, false);
 };
 
-
+/***************************************************
+ Clears the current display element (answer element) 
+ ***************************************************/
 clearBtn.onclick = () => {
     displayVal = '0';
     pendingVal = undefined;
@@ -110,6 +125,9 @@ clearBtn.onclick = () => {
     answerEl.innerHTML = '0';
 }
 
+/************************************************************************
+ Backspaces the current display element (answer element) from the right (last clicked)
+ ***********************************************************************/
 backBtn.onclick = () => {
     let lengthOfDisplayVal = displayVal.length;
     displayVal = displayVal.slice(0, lengthOfDisplayVal - 1);
@@ -120,6 +138,10 @@ backBtn.onclick = () => {
 
     answerEl.innerText = displayVal;
 }
+
+/*************************************
+ Controls the functionality of the decimal
+ ************************************/
 decimal.onclick = () => {
     if (!displayVal.includes('.'))
         displayVal += '.';
