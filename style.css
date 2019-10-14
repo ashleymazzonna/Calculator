@@ -83,3 +83,18 @@ table, td { border-radius: 10px; }
     background-color:rgb(26, 52, 80);
     padding: 1rem;
     font-size: 2.5rem; }
+
+
+
+    @media only screen and (min-width: 375px) and (max-width: 812px) {
+		header {
+            position: relative;
+            top: 10rem;
+        }
+
+        table {
+            position: absolute;
+            top: 25%;
+            margin: 2rem 7.3rem;
+        }
+}
