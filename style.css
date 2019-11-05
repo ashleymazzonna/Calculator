@@ -84,9 +84,9 @@ table, td { border-radius: 10px; }
         font-size: 4rem; }
 
 footer {
-    position: absolute;
-    top: 95%;
-    left: 20%;
+	position: absolute;
+	top: 95%;
+	left: 413px;
 }
     li {
         display: inline;
@@ -119,6 +119,7 @@ footer {
             left: 20%;
         
         }
+		
         footer {
             width: 100%;
             position: absolute;
@@ -139,4 +140,14 @@ footer {
                padding-left: 10rem;
             }
 
+}
+
+
+
+p.rotate (180deg) {
+	-webkit-transform:  rotate(@deg);
+	-moz-transform: 	rotate(@deg);
+	-ms-transform: 		rotate(@deg);
+	-o-transform: 		rotate(@deg);
+	transform: 		 	rotate(@deg);	
 }
